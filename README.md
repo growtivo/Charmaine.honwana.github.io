@@ -1,1 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Charmaine Honwana | Virtual Assistant & Financial Administrator | South Africa</title>
+  <meta name="description" content="Charmaine Honwana — Virtual Executive Assistant and Financial Administrator with 15+ years of experience in business administration, customer support, bookkeeping, and remote executive support. Available for remote work worldwide." />
+  <meta name="keywords" content="virtual assistant, business administration, customer support, financial administrator, bookkeeper, executive assistant, South Africa, remote VA, QuickBooks, Xero, Pastel Partner, invoice processing, accounts payable, accounts receivable, calendar management, remote work" />
+  <meta name="author" content="Charmaine Honwana" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (LinkedIn / social sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Charmaine Honwana | Virtual Assistant & Financial Administrator" />
+  <meta property="og:description" content="15+ years in business administration, virtual assistance, customer support & financial administration. Available for remote engagements worldwide." />
+  <meta property="og:locale" content="en_ZA" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal-50:  #E1F5EE;
+      --teal-100: #9FE1CB;
+      --teal-400: #1D9E75;
+      --teal-600: #0F6E56;
+      --teal-800: #085041;
+      --teal-900: #04342C;
+      --blue-50:  #E6F1FB;
+      --blue-600: #185FA5;
+      --blue-800: #0C447C;
+      --gray-50:  #F7F8F6;
+      --gray-100: #EAECE8;
+      --gray-300: #C8CCC5;
+      --gray-500: #6B7268;
+      --gray-700: #3A3F38;
+      --gray-900: #1C1F1B;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--gray-700);
+      background: var(--gray-50);
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247,248,246,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--gray-100);
+      padding: 0 1.5rem;
+    }
+    .nav-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .nav-brand { font-size: 14px; font-weight: 600; color: var(--teal-800); letter-spacing: -0.01em; }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { font-size: 13px; color: var(--gray-500); text-decoration: none; }
+    .nav-links a:hover { color: var(--teal-600); }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--teal-800);
+      padding: 5rem 1.5rem 4rem;
+    }
+    .hero-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--teal-400);
+      border: 3px solid var(--teal-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Serif Display', serif;
+      font-size: 30px;
+      color: var(--teal-50);
+      flex-shrink: 0;
+    }
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .hero-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--teal-100);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .hero-summary {
+      font-size: 14.5px;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    .contact-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12.5px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 5px 12px;
+      color: var(--teal-50);
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .contact-pill:hover { background: rgba(255,255,255,0.18); }
+    .contact-pill i { font-size: 14px; }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--teal-900);
+      padding: 1.25rem 1.5rem;
+    }
+    .stats-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 28px;
+      color: var(--teal-100);
+      line-height: 1.1;
+    }
+    .stat-lbl {
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.5);
+      margin-top: 2px;
+    }
+
+    /* ── MAIN CONTENT ── */
+    main { padding: 2.5rem 0 4rem; }
+
+    .section { margin-bottom: 2rem; }
+    .section-heading {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal-600);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .section-heading i { font-size: 15px; }
+
+    .card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--gray-100);
+      padding: 1.5rem;
+    }
+
+    /* ── SEO TAGS ── */
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 7px; }
+    .seo-tag {
+      font-size: 12.5px;
+      background: var(--blue-50);
+      color: var(--blue-800);
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid #B5D4F4;
+    }
+
+    /* ── SKILLS ── */
+    .skill-tag {
+      font-size: 12.5px;
+      background: var(--teal-50);
+      color: var(--teal-800);
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--teal-100);
+    }
+    .skill-tag.neutral {
+      background: var(--gray-100);
+      color: var(--gray-700);
+      border-color: var(--gray-300);
+    }
+
+    /* ── TECH TABLE ── */
+    .tech-table { width: 100%; }
+    .tech-row-item {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--gray-100);
+      font-size: 13.5px;
+    }
+    .tech-row-item:last-child { border-bottom: none; }
+    .tech-cat { min-width: 130px; font-weight: 500; color: var(--gray-500); flex-shrink: 0; font-size: 12.5px; }
+    .tech-val { color: var(--gray-700); }
+
+    /* ── EXPERIENCE ── */
+    .exp-item {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .exp-item:first-child { padding-top: 0; }
+    .exp-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 3px; }
+    .exp-role { font-size: 14.5px; font-weight: 600; color: var(--gray-900); }
+    .exp-date {
+      font-size: 12px;
+      color: var(--gray-500);
+      white-space: nowrap;
+      background: var(--gray-100);
+      padding: 3px 9px;
+      border-radius: 20px;
+    }
+    .exp-company { font-size: 13px; color: var(--teal-600); font-weight: 500; margin-bottom: 10px; }
+    .exp-bullets { list-style: none; }
+    .exp-bullets li {
+      font-size: 13.5px;
+      color: var(--gray-500);
+      line-height: 1.65;
+      padding: 2px 0 2px 16px;
+      position: relative;
+    }
+    .exp-bullets li::before { content: "–"; position: absolute; left: 0; color: var(--teal-400); }
+
+    /* ── EDUCATION ── */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--gray-100);
+      gap: 12px;
+    }
+    .edu-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .edu-name { font-size: 14px; font-weight: 600; color: var(--gray-900); }
+    .edu-inst { font-size: 12.5px; color: var(--gray-500); margin-top: 2px; }
+    .edu-year { font-size: 12px; color: var(--gray-500); white-space: nowrap; }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--teal-800);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cta-section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .cta-section p { font-size: 14px; color: rgba(255,255,255,0.65); margin-bottom: 20px; }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--teal-400);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .cta-btn:hover { background: var(--teal-600); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--gray-500);
+      padding: 1.5rem;
+      border-top: 1px solid var(--gray-100);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 1rem; }
+      .stats-inner { grid-template-columns: 1fr; gap: 0.5rem; }
+      .nav-links { display: none; }
+      .exp-header { flex-direction: column; gap: 4px; }
+      .edu-item { flex-direction: column; gap: 2px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Schema.org structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Charmaine Honwana",
+    "jobTitle": "Virtual Executive Assistant and Financial Administrator",
+    "email": "charmainehongs@outlook.com",
+    "url": "https://linkedin.com/in/charmaine-honwana-572065181",
+    "address": { "@type": "PostalAddress", "addressCountry": "ZA" },
+    "knowsAbout": ["Virtual Assistant", "Business Administration", "Customer Support", "Financial Administration", "Bookkeeping", "QuickBooks", "Xero", "Accounts Payable", "Accounts Receivable", "Executive Assistant"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of South Africa"
+    }
+  }
+  </script>
+
+  <nav aria-label="Site navigation">
+    <div class="nav-inner">
+      <span class="nav-brand">Charmaine Honwana</span>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" role="banner">
+    <div class="hero-inner">
+      <div class="avatar" aria-hidden="true">CH</div>
+      <div>
+        <h1>Charmaine Honwana</h1>
+        <div class="hero-title">Virtual Assistant · Business Admin · Financial Administrator</div>
+        <p class="hero-summary">
+          Virtual Executive Assistant and Finance Administration Professional with 15+ years of experience in business administration, customer support, bookkeeping, invoice processing, and executive-level coordination. Available for remote engagements worldwide.
+        </p>
+        <div class="contact-row">
+          <a href="mailto:charmainehongs@outlook.com" class="contact-pill">
+            <i class="ti ti-mail" aria-hidden="true"></i> charmainehongs@outlook.com
+          </a>
+          <a href="https://linkedin.com/in/charmaine-honwana-572065181" class="contact-pill" target="_blank" rel="noopener">
+            <i class="ti ti-brand-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+          <span class="contact-pill">
+            <i class="ti ti-map-pin" aria-hidden="true"></i> South Africa · Remote
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="stats-bar" aria-label="Key highlights">
+    <div class="stats-inner">
+      <div>
+        <div class="stat-num">15+</div>
+        <div class="stat-lbl">Years of experience</div>
+      </div>
+      <div>
+        <div class="stat-num">R450K+</div>
+        <div class="stat-lbl">Monthly revenue supported</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-lbl">Accounting platforms</div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <!-- SEO Keywords -->
+      <section class="section" id="keywords" aria-labelledby="keywords-heading">
+        <div class="section-heading" id="keywords-heading">
+          <i class="ti ti-tags" aria-hidden="true"></i> Searchable skills &amp; keywords
+        </div>
+        <div class="card">
+          <div class="tag-cloud">
+            <span class="seo-tag">Business Administration</span>
+            <span class="seo-tag">Virtual Assistant</span>
+            <span class="seo-tag">Customer Support</span>
+            <span class="seo-tag">Financial Administrator</span>
+            <span class="seo-tag">Executive Assistant</span>
+            <span class="seo-tag">Remote VA</span>
+            <span class="seo-tag">Bookkeeping Support</span>
+            <span class="seo-tag">Accounts Payable &amp; Receivable</span>
+            <span class="seo-tag">Invoice Processing</span>
+            <span class="seo-tag">Calendar Management</span>
+            <span class="seo-tag">Email Management</span>
+            <span class="seo-tag">QuickBooks</span>
+            <span class="seo-tag">Xero</span>
+            <span class="seo-tag">Pastel Partner / Sage</span>
+            <span class="seo-tag">Month-end Reporting</span>
+            <span class="seo-tag">Data Entry</span>
+            <span class="seo-tag">Stakeholder Communication</span>
+            <span class="seo-tag">South Africa</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Competencies & Tech -->
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="section-heading" id="skills-heading">
+          <i class="ti ti-tool" aria-hidden="true"></i> Skills &amp; tools
+        </div>
+        <div class="card" style="margin-bottom: 1rem;">
+          <div class="tag-cloud">
+            <span class="skill-tag">Virtual administrative support</span>
+            <span class="skill-tag">Billing &amp; invoice administration</span>
+            <span class="skill-tag">Accounts payable &amp; receivable</span>
+            <span class="skill-tag">Journal entries &amp; accruals</span>
+            <span class="skill-tag">Month-end reporting</span>
+            <span class="skill-tag">Calendar &amp; email management</span>
+            <span class="skill-tag">Stakeholder communication</span>
+            <span class="skill-tag">Data entry &amp; record keeping</span>
+            <span class="skill-tag neutral">Google Workspace</span>
+            <span class="skill-tag neutral">Microsoft Office</span>
+            <span class="skill-tag neutral">Excel (Pivot, VLOOKUP, VBA)</span>
+            <span class="skill-tag neutral">Zoom · Teams · Slack</span>
+            <span class="skill-tag neutral">QuickBooks</span>
+            <span class="skill-tag neutral">Xero</span>
+            <span class="skill-tag neutral">Sage Pastel Partner</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="tech-row-item">
+            <span class="tech-cat">Spreadsheets</span>
+            <span class="tech-val">Microsoft Excel — Pivot Tables, VLOOKUP/XLOOKUP, formulas, reporting, basic VBA automation</span>
+          </div>
+          <div class="tech-row-item">
+            <span class="tech-cat">Accounting systems</span>
+            <span class="tech-val">Sage Pastel Partner, QuickBooks, Xero</span>
+          </div>
+          <div class="tech-row-item">
+            <span class="tech-cat">Productivity suites</span>
+            <span class="tech-val">Microsoft Office, Google Workspace</span>
+          </div>
+          <div class="tech-row-item">
+            <span class="tech-cat">Collaboration tools</span>
+            <span class="tech-val">Zoom, Microsoft Teams, Slack</span>
+          </div>
+          <div class="tech-row-item">
+            <span class="tech-cat">CRM tools</span>
+            <span class="tech-val">Client relationship management platforms</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience" aria-labelledby="exp-heading">
+        <div class="section-heading" id="exp-heading">
+          <i class="ti ti-briefcase" aria-hidden="true"></i> Professional experience
+        </div>
+        <div class="card">
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <div class="exp-role">Freelance Virtual Assistant</div>
+              <span class="exp-date">Sep 2025 – Present</span>
+            </div>
+            <div class="exp-company">Self-employed · Remote</div>
+            <ul class="exp-bullets">
+              <li>Provide virtual executive and administrative support — calendar management, meeting scheduling across multiple time zones.</li>
+              <li>Bookkeeping and finance administration: invoice tracking, payment follow-ups, digital financial record management.</li>
+              <li>Collaborate via Google Workspace, Zoom, Microsoft Teams, and project management platforms.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <div class="exp-role">Executive Support &amp; Finance Administrator / Bookkeeper</div>
+              <span class="exp-date">Nov 2017 – Aug 2025</span>
+            </div>
+            <div class="exp-company">Pest Control, Hygiene &amp; Cleaning Industry · 3 branches</div>
+            <ul class="exp-bullets">
+              <li>Managed full finance administration cycle across three branches — billing, invoicing, purchase orders, AR follow-ups, and financial record maintenance.</li>
+              <li>Prepared 20–25 client quotations weekly, contributing to monthly revenues exceeding R450,000 with high accuracy.</li>
+              <li>Processed purchase orders, verified supporting documentation, and maintained supplier and customer records.</li>
+              <li>Supported month-end financial administration: account reconciliations, documentation review, and reporting using Sage Pastel, QuickBooks, and Excel.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <div class="exp-role">Personal Assistant</div>
+              <span class="exp-date">Nov 2013 – Jun 2015</span>
+            </div>
+            <div class="exp-company">Langa's Family Estate</div>
+            <ul class="exp-bullets">
+              <li>Executive and operational support for estate renovation projects involving multiple contractors and suppliers.</li>
+              <li>Maintained financial documentation, procurement records, supplier quotations, and expense tracking reports.</li>
+              <li>Managed daily communications with suppliers, contractors, and service providers with timely follow-ups.</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <div class="exp-role">Distribution Support Administrator</div>
+              <span class="exp-date">Mar 2008 – Jun 2012</span>
+            </div>
+            <div class="exp-company">Old Mutual Group Schemes · Regional team of 11</div>
+            <ul class="exp-bullets">
+              <li>Administrative and operational support for a regional sales and distribution team in a high-volume corporate environment.</li>
+              <li>High-volume data entry, client record maintenance, and reporting while ensuring confidentiality and data accuracy.</li>
+              <li>Recognised with the 51 Club Regional Award (2010) for outstanding service and operational support.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education" aria-labelledby="edu-heading">
+        <div class="section-heading" id="edu-heading">
+          <i class="ti ti-school" aria-hidden="true"></i> Education &amp; certifications
+        </div>
+        <div class="card">
+          <div class="edu-item">
+            <div>
+              <div class="edu-name">Diploma in Accounting Science</div>
+              <div class="edu-inst">University of South Africa (UNISA)</div>
+            </div>
+            <div class="edu-year">2024</div>
+          </div>
+          <div class="edu-item">
+            <div>
+              <div class="edu-name">Call Centre Certificate</div>
+              <div class="edu-inst">Cornerstone College</div>
+            </div>
+            <div class="edu-year">2007</div>
+          </div>
+          <div class="edu-item">
+            <div>
+              <div class="edu-name">C2 Level English Certified</div>
+              <div class="edu-inst">EF Education First — Proficient / Native-equivalent</div>
+            </div>
+            <div class="edu-year">—</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="contact" aria-labelledby="cta-heading">
+        <div class="cta-section">
+          <h2 id="cta-heading">Let's work together</h2>
+          <p>Open to remote virtual assistant, business administration, customer support, and financial administration roles worldwide.</p>
+          <a href="mailto:charmainehongs@outlook.com" class="cta-btn">
+            <i class="ti ti-send" aria-hidden="true"></i> Get in touch
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Charmaine Honwana · Virtual Assistant &amp; Financial Administrator · South Africa · Remote</p>
+  </footer>
+
+</body>
+</html>
 
